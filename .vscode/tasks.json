@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Converter",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-Iinclude",
+          "-o", "converter",
+          "src/main.cpp",
+          "src/converter.cpp",
+          "-std=c++17"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }  
